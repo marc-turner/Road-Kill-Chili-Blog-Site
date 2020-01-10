@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* UITILITES */
+.vh85{
+    height: 85vh;
+}
+
+.vh87{
+    height: 87vh;
+}
+
+.my1 {
+    margin:5px 0;
+}
+
+.my2 {
+    margin:10px 0;
+}
+
+.my3 {
+    margin:20px 0;
+}
+
+.mx1 {
+    margin:0 5px;
+}
+
+.mx2 {
+    margin:0 10px;
+}
+
+.mx3 {
+    margin:0 20px;
+}
+
+.myt1 {
+    margin-top:5px;
+}
+
+.myt2 {
+    margin-top:10px;
+}
+
+.myt3 {
+    margin-top:20px;
+}
+
+.myb1 {
+    margin-bottom:5px;
+}
+
+.myb2 {
+    margin-bottom:10px;
+}
+
+.myb3 {
+    margin-bottom:20px;
+}
+
+.no-padding{
+    padding: 0;
+}
+/* NAVBAR */
+
+.navbar-brand {
+    font-family: 'Freckle Face', cursive;
+    font-size: 2rem;
+}
+
+.main-content_section{
+    background-image: url("img/RoadKillHero.jpg");
+    background-size: cover;
+    background-color: #7a7878;
+}
+
+.headline-div{
+    margin: 20% 0 70% 0;
+}
+
+.most-recent_index_header{
+    background-color: white;
+}
+
+/* .left-blog_col {
+    height: 85vh;
+    
+} */
+
+.footer {
+    text-align: center;
+}
