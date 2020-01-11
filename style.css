@@ -1,5 +1,6 @@
 :root {
-    --nav-bg-color: grey;
+    --nav-bg-color: #808080;
+    --nav-text-color: #333333;
   }
   
 *{
@@ -9,17 +10,25 @@
     overflow: hidden;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
  /* UTILITES */
  .container{
-     /* border: 1px solid black; */
      margin: 0 auto;
      width: 85%;
+     max-width: 1000px;
  }
 
 /* NAVBAR */
 nav {
     background-color: var(--nav-bg-color);
-    
 }
 
 ul{
@@ -30,6 +39,8 @@ li{
     display: inline-block;
     margin: auto;
     vertical-align: middle;
+    padding-left: 10px;
+    font-weight: bold;
 }
 .nav-brand{
     padding: 0;
@@ -43,9 +54,13 @@ li{
 .nav-logo_text {
     font-family: 'Freckle Face', cursive;
     font-size: 2.5rem;
+    padding: 0;
+    font-weight: normal;
 }
 
-.main-content_section{
+/* INDEX PAGE */
+
+.index-main-content_section{
     background-image: url("img/RoadKillHero.jpg");
     background-size: cover;
     background-color: #7a7878;
@@ -54,6 +69,101 @@ li{
     min-height: 85vh;
 }
 
-.footer {
+.index-content-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.index-left-column {
+    display: flex;
+    flex-direction: column;
+    height: 87vh;
+    /* border: 1px solid black; */
+    width: 55%;
+}
+
+.index-headline-div {
+    height: 54vh;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 3rem;
+    padding-top: 20%;
+}
+
+.index-most-recent {
+    background: white;
+    border-radius: 5px;
+}
+
+.index-most-recent h3{
+    background: grey;
+    padding: 5px;
+    text-align: center;border-bottom: 1px solid black ;
+}
+
+.index-post{
+    padding: 10px;
+}
+.index-post_title {
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.index-post_date {
+    font-size: .75rem;
+    font-style: italic;
+}
+
+.index-post_body{
+    margin: 10px 0;
+}
+
+.index-post_link{
+    margin: 10px 0 20px 0;
+    color: blue;
+    font-size: .75rem;
+}
+
+.index-right-column{
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.index-recent{
+    background: white;
+    border-radius: 5px;
+}
+
+.index-recent h3{
+    background: grey;
+    padding: 5px;
+    text-align: center;border-bottom: 1px solid black ;
+}
+
+.index-recent_title {
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.index-recent_date {
+    display: block;
+    font-size: .75rem;
+    font-style: italic;
+    padding: 0 0 5px 5px ;
+}
+
+.index-recent_date a {
+    color: blue;
+    font-style: normal;
+    margin-left: 65px;
+}
+
+
+/* FOOTER */
+
+footer {
     text-align: center;
 }

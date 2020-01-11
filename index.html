@@ -5,109 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Freckle+Face&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Road Kill Chili</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav>
         <div class="container">
-            <img class="logo-image" src="img/dead-racoon.jpg" alt="Roadkil Chili">
-            <a class="navbar-brand" href="index.html">ROAD KILL CHILI</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="index.html">Home <span
-                            class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="achives.html">Archives</a>
-                    <a class="nav-item nav-link" href="about.html">About</a>
-                </div>
-            </div>
+            <ul>
+                <li class="nav-brand">
+                    <img class="nav-logo_image" src="img/dead-racoon.jpg" alt="Road Kill Chili Blog">
+                    <span></span>
+                </li>
+                <li class="nav-logo_text">Road Kill Chili</li>
+                <li class="nav-home"><a href="index.html" alt="home">HOME</a> </li>
+                <li class="nav-most_recent"><a href="most_recent.html" alt="most recent">RECENT</a></li>
+                <li class="nav-archives"><a href="archives.html" alt="home">ARCHIVES</a></li>
+                <li class="nav-about"><a href="about.html" alt="home">ABOUT</a></li>
+            </ul>
         </div>
     </nav>
-
-    <section class="main-content_section vh87">
+    <section class="index-main-content_section">
         <div class="container">
-            <div class="row align-items-end justify-content-between">
-                <div class="col-6 vh85 no-padding">
-                    <div class="headline-div my3">
-                        <h1>Hey Grandpa...<br>
-                            What's for Supper</h1>
+            <div class="index-content-div">
+                <div class="index-left-column">
+                    <div class="index-headline-div">
+                        <p>HEY GRANDPA...<br>WHAT'S FOR SUPPER?</p>
                     </div>
-                    <div class="most-recent_index">
-                        <div class="card">
-                            <div class="card-header">
-                                Most Recent Post
+                    <div class="index-most-recent">
+                        <h3>MOST RECENT POST</h3>
+                        <div class="index-post">
+                            <div class="index-post_title">
+                                OUR STORY SO FAR...
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Our Story So Far...</h5>
-                                <p class="post-date">Posted: January 10, 2020</p>
-                                <p class="card-text">It is said that the average person goes through 5-7 career changes
-                                    in their lifetime with 10-13 job in their lifetime. Once upon a time it was
-                                    considered a bad thing to jump job to job. Long term employment and employees were
-                                    cherished and rewarded. Fancy crystal bric-a-brac at milestones for years served and
-                                    a gold watch at retirement were the norm for those in the "boomer" generation...</p>
-                                <a href="most_recent.html" class="btn btn-sm btn-primary">Read More</a>
+                            <div class="index-post_date">
+                                POSTED: January 10, 2020
                             </div>
+
+                            <div class="index-post_body">
+                                It is said that the average person goes through 5-7 career changes in their lifetime
+                                with
+                                10-13 job in their lifetime. Once upon a time it was considered a bad thing to jump job
+                                to
+                                job. Long term employment and employees were cherished and rewarded. Fancy crystal
+                                bric-a-brac at milestones for years served and a gold watch at retirement were the norm
+                                for
+                                those in the "boomer" generation...
+                            </div>
+                            <a class="index-post_link" href="most_recent.html" alt="click to read">READ MORE</a>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-5">
-                    <div class="card">
-                        <div class="card-header">
-                            Recent Posts
+                <div class="index-right-column">
+                    <div class="index-recent">
+                        <h3>RECENT POSTS</h3>
+                        <div>
+                            <div class="index-recent_title">
+                                OUR STORY SO FAR...
+                            </div>
+                            <div class="index-recent_date">
+                                POSTED: January 10, 2020
+                                <a href="#">...go to it</a>
+                            </div>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item no-padding">
-                                <div class="card">
-                                    <div class="card-body px-1 py-1">
-                                        <h5 class="card-title myb1">Our Story So Far...</h5>
-                                        <p class="post-date">Posted: January 10, 2020</p>
-
-                                        <a href="#" class="card-link">Read Story</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                        <hr>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-
     <footer>
-        <div class="container">
-            <div class="footer">
-                &copy;
-                <script type="text/javascript">
-                    document.write(new Date().getFullYear());
-                </script>, Marc Turner<br>
-                <a href="https://www.marcturner.tech">www.marcturner.tech</a>
-
-            </div>
-        </div>
+        &copy;
+        <script>new Date().getFullYear() > document.write(new Date().getFullYear());</script>. Marc Turner <br>
+        <a href="https://www.marcturner.tech">www.marcturner.tech</a>
     </footer>
 
 
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
